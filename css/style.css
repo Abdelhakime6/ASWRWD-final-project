@@ -140,6 +140,10 @@ html {
       color: #334;
     }
 
+    .top {
+        color:rgb(231, 213, 190) ;
+    }
+
     h1, p{
 color: rgb(231, 213, 190);    }
 }
