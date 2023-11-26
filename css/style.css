@@ -1,0 +1,145 @@
+body {
+    background-color: antiquewhite;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+}
+
+p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    border: 5px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 375px;
+
+}
+
+
+figcaption{
+    border: 5px solid black;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    background-color: black;
+    color: aliceblue;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+  
+figure {
+    width: 100%;
+    border: 5px solid black;
+    border-radius: 15px;
+
+}
+
+div img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+@media screen and (min-width: 772px) and (max-width: 992px){
+body {
+    background-color: aqua;
+}
+    .grid{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    figure {
+
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        padding-right: 10px;
+
+    }
+    figure img  {
+
+        width: 100%;
+        display: block;
+        border-radius: 50%;
+    }
+
+   figure figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 0 50% 50%;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+
+
+    }
+    
+    .fig9 {
+
+        grid-column: span 2;
+    }
+
+
+}
+
+@media screen and (min-width: 992px){
+body {
+        background-color: bisque;
+
+}
+
+.grid{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+figure, figcaption, img {
+    border-radius: 0%; 
+}
+
+figure:nth-child(3n){
+
+    grid-column: span 2;
+}
+
+}
+
+@media (prefers-reduced-motion){
+html {
+    scroll-behavior: none;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color:rgb(81, 116, 151);
+      color: #334;
+    }
+
+    h1, p{
+color: rgb(231, 213, 190);    }
+}
