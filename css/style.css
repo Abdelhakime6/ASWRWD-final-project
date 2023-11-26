@@ -2,7 +2,7 @@ body {
     background-color: antiquewhite;
 }
 
-html, body {
+html {
     scroll-behavior: smooth;
 }
 
@@ -37,13 +37,12 @@ figcaption{
     color: aliceblue;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-}
-  
+}*/
+ 
 figure {
     width: 100%;
     border: 5px solid black;
     border-radius: 15px;
-
 }
 
 div img {
@@ -56,6 +55,7 @@ div img {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+
 }
 
 @media screen and (min-width: 772px) and (max-width: 992px){
