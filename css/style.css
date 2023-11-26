@@ -59,9 +59,7 @@ div img {
 }
 
 @media screen and (min-width: 772px) and (max-width: 992px){
-body {
-    background-color: aqua;
-}
+
     .grid{
 
         display: grid;
